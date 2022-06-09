@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+    <title>MY CART</title>
+    <link rel="stylesheet" href="jsassn.css">
+    <script src="jsAssn.js"></script>
+</head>
+<body>
+  <header class="bg-success text-white p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <font face="Comic sans MS" 
+                    size="11" color="black">
+                    <strong>Take Away n Least Pay</strong>
+                </font>
+                   
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <h1>All the electronics at reaonable prize ,,,,,as never before </h1>
+    <h2>Product List</h2>
+  <table>
+    <th>
+     
+      <img src="mobilephones.png" alt="image-here" width="100px">
+      <img src="headphones.png" alt="image-here" width="100px">
+      <img src="laptop.png" alt="image-here" width="100px">
+      
+    </th>
+    <th>
+      <p>
+        <ol type="1">
+        1.Mobile phone     <button type="button" onclick="buy()">Buy</button><br>
+        2.Headphone        <button type="button" onclick="buy()">Buy</button><br>
+        3.Smart Watch      <button type="button" onclick="buy()">Buy</button><br>
+        4.Earphones        <button type="button" onclick="buy()">Buy</button><br>
+        5.Laptop           <button type="button" onclick="buy()">Buy</button><br>
+        6.desktop          <button type="button" onclick="buy()">Buy</button><br>
+        </ol>
+      </p>
+    </th>
+    
+    <th>
+      <img src="smartwatch.png" alt="image-here" width="100px">
+      <img src="earphones.png" alt="image-here" width="100px">
+      <img src="desktop.png" alt="image-here" width="100px">
+      
+      
+    </th>
+  </table> 
+    
+    <h2>What YOU are LOOKING for (Specify) </h2>
+    <label id="lblsuccess" class="text-success" style="display: none;"> </label>
+
+    <form id="addForm">
+      <div class="row">
+          <div class="col-lg-7 col-md-7 col-sm-7">
+
+              <input type="text" onkeyup=
+                  "toggleButton(this, 'submit')"
+                  class="form-control" id="item">
+          </div>
+
+          <div class="col-lg-5 col-md-5 col-sm-5">
+            <input type="submit" class="btn btn-dark"
+                  id="submit" value="Submit" disabled>
+          </div>
+      </div>
+  </form>
+
+  
+  <h3 class="mt-4">Items in your cart</h3>
+   
+  <form id="addForm">
+      <ul class="list-group" id="items"></ul>
+  </form>
+</div>
+<br>
+<hr>
+<br>
+<footer class="bg-success text-white p-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+              <font face="Comic sans MS" 
+                  size="11" color="black">
+                  <strong>Happy Shopping</strong>
+              </font>
+                 
+          </div>
+      </div>
+  </div>
+</footer>
+    
+    <!-- <label>enter x value :</label>
+    <input type="text" id="xvalue" value="">
+    <br>
+    <label>enter the y value </label>
+    <input type="text" id="yvalue" value="">
+    <br>
+    <button onclick="itemadded()">+ADD</button>
+    <input type="text" id="resultid" value=""> -->
+   <!-- <div class="container">
+       <input id="input" type="text">
+       <button onclick="itemadded()">+ADD</button>
+        <div class="to-buy" id="todoshopping">
+        </div>
+   </div>
+   <h3 id="list"></h3> -->
+</body>
+</html>

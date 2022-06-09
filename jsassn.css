@@ -1,0 +1,14 @@
+
+body{
+   
+    background-color: rgb(116, 162, 162);
+    
+        text-align: center;
+} 
+table{
+    align-items: center;
+    border: 5px solid;
+}
+th{
+    width: 33%;
+}
